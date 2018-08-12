@@ -1,45 +1,45 @@
 
-# yfull
+# fq2vcf
 
-## 功能
+## functions
 
-- fastqc -- 质量控制
-- fastp -- 质量控制，引物切除
-- bwa mem -- 比对
-- bam filter -- 低质量比对过滤
-- bqsr -- 碱基质量值校正
-- haplotype caller and genotype caller -- 单倍体型和基因型检出
+- fastqc -- quality control
+- fastp -- quality control，cut primer, adaptor, barcode etc.
+- bwa mem -- mapping
+- bam filter -- filter low mapping quality reads
+- bqsr -- base quality score recalibration
+- haplotype calling and genotype calling
 
-## 安装
+## install
 
-### 需要的工具
+### tools needed
 
-#### 以下工具应该在命令的搜索路径中
+#### tools need to be on tools' search path以下工具应该在命令的搜索路径中
 
-- python，版本 >= 2.7
-- pip，python 包管理工具 pip
+- python, version >= 2.7
+- pipenv, a python package management tool
 
-如何安装 pip 请见 https://pip.pypa.io/en/stable/installing/
+how to install pip please see https://pip.pypa.io/en/stable/installing/
 
-简而言之，安装 pip 命令如下：
+briefly, installing pip is as follows：
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
 python get-pip.py --user
 
-"--user" 使在非管理员权限下安装，安装的 pip 位于 ~/.local/bin 路径下，为了方便使用 pip 命令，将 ~/.local/bin 加入命令的搜索路径中。
+"--user" make install pip 使在非管理员权限下安装，安装的 pip 位于 ~/.local/bin 路径下，为了方便使用 pip 命令，将 ~/.local/bin 加入命令的搜索路径中。
 
 - fastp
 - fastqc
 - bwa
 - samtools
 
-#### 需要以下 jar 包
+#### jar packages needed
 
 - picard
-- gatk，目前仅支持版本 3，且版本 >=3.7。
+- gatk, version 3 and >=3.7 support currently.
 
-### 安装步骤
+### install steps
 
 1. 推荐在虚拟环境下安装，首先安装 virtualenv
 
