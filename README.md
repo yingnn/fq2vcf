@@ -14,14 +14,14 @@
 
 ### tools needed
 
-#### tools need to be on tools' search path以下工具应该在命令的搜索路径中
+#### tools need to be on tools' search path
 
 - python, version >= 2.7
 - pipenv, a python package management tool
 
 how to install pipenv please see https://docs.pipenv.org/install/#installing-pipenv
 
-briefly, installing pip is as follows：
+briefly, installing pipenv is as follows：
 
 1. using pip
 
@@ -68,7 +68,7 @@ FQ2VCF --help
 
 FQ2VCF --config FQ2VCF.cfg list
 
-FQ2VCF.cfg is config file, list is a file with 4 cols per line, each col represents sample_id sample_name path/to/read1.fq path/to/read2.fq, separated with tab.
+FQ2VCF.cfg is config file, list is a file with 4 cols per line, each col represents sample_id sample_name path/to/read1.fq path/to/read2.fq, separated by tab.
 
 note: first time or every time that config file changes, --config FQ2VCF.cfg must be supplied for config file that FQ2VCF_RC point to goes into effect.
 
