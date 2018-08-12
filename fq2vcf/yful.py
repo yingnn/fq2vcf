@@ -2,13 +2,13 @@ from __future__ import print_function, division
 import os
 from .utils import get_abs, get_config, proc
 
-RC = 'YFUL_RC'
+RC = 'FQ2VCF_RC'
 
 
 def get_rc():
     if RC in os.environ.keys():
         return os.environ[RC]
-    return get_abs('~/.config/yfulrc')
+    return get_abs('~/.config/fq2vcfrc')
 
 
 def format_java_run(mem='12g', tmp_dir='tmp'):

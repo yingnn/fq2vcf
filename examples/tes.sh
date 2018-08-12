@@ -20,7 +20,7 @@ shift $(($OPTIND - 1))
 
 if [ $# -lt 1 ]; then info; fi
 
-package_name=git+https://code.csdn.net/YINGNN0/cal.git
+package_name=git+https://github.com/yingnn/fq2vcf.git
 
 if test -n "$virtual"; then
     virtual="pip install virtualenv && virtualenv $1"

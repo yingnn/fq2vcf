@@ -1,4 +1,4 @@
-#!/bin/bash -e
+ #!/bin/bash -e
 
 function info() {
     echo Usage: `basename $0` [-p out_prefix -s out_suffix] list
