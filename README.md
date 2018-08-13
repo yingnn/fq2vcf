@@ -4,7 +4,7 @@
 ## functions
 
 - fastqc -- quality control
-- fastp -- quality control，cut primer, adaptor, barcode etc.
+- fastp -- quality control, cut primer, adaptor, barcode etc.
 - bwa mem -- mapping
 - bam filter -- filter low mapping quality reads
 - bqsr -- base quality score recalibration
@@ -49,7 +49,7 @@ On Linux and macOS you can find the user base binary directory by running python
 
 ### install steps
 
-git clone git@github.com:yingnn/fq2vcf.git
+git clone https://github.com/yingnn/fq2vcf.git
 
 cd fq2vcf
 
@@ -57,9 +57,7 @@ pipenv install .
 
 ## usage
 
-2. run scripts
-
-activate environment variable FQ2VCF_RC, FQ2VCF_RC point to a file that contains some variables and functions that scripts used. the default file path is ~/.config/fq2vcfrc. FQ2VCF_RC can be set by yourself.
+activate virtual environment, environment variable FQ2VCF_RC, FQ2VCF_RC point to a file that contains some variables and functions that scripts used. the default file path is ~/.config/fq2vcfrc. FQ2VCF_RC can be set by yourself.
 
 . activate.sh path/to/fq2vcf
 
