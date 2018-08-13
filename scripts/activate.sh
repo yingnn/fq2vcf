@@ -1,5 +1,6 @@
 #!/bin/bash
 
-test -z "$YFUL_RC" && YFUL_RC=~/.config/yfulrc
-export YFUL_RC
-export var=$YFUL_RC
+
+test -z "$FQ2VCF_RC" && FQ2VCF_RC=~/.config/fq2vcfrc
+export fq2vcf_RC
+export var=$FQ2VCF_RC

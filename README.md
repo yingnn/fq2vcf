@@ -12,7 +12,7 @@
 
 ## install
 
-### tools needed
+### tools involved
 
 #### tools need to be on tools' search path
 
@@ -42,14 +42,12 @@ On Linux and macOS you can find the user base binary directory by running python
 - bwa
 - samtools
 
-#### jar packages needed
+#### jar packages involved
 
 - picard
 - gatk, version 3 and >=3.7 support currently.
 
 ### install steps
-
-3. install scripts
 
 git clone git@github.com:yingnn/fq2vcf.git
 
@@ -57,26 +55,25 @@ cd fq2vcf
 
 pipenv install .
 
+## usage
 
-4. run scripts
+2. run scripts
 
 activate environment variable FQ2VCF_RC, FQ2VCF_RC point to a file that contains some variables and functions that scripts used. the default file path is ~/.config/fq2vcfrc. FQ2VCF_RC can be set by yourself.
 
 . activate.sh
 
-FQ2VCF --help
+fq2vcf --help
 
-FQ2VCF --config FQ2VCF.cfg list
+fq2vcf --config fq2vcf.cfg list
 
-FQ2VCF.cfg is config file, list is a file with 4 cols per line, each col represents sample_id sample_name path/to/read1.fq path/to/read2.fq, separated by tab.
+fq2vcf.cfg is a config file, list is a file with 4 cols per line, each col represents sample_id sample_name path/to/read1.fq path/to/read2.fq, separated by tab.
 
-note: first time or every time that config file changes, --config FQ2VCF.cfg must be supplied for config file that FQ2VCF_RC point to goes into effect.
+note: first time or every time that the config file changes, --config fq2vcf.cfg must be supplied for the profile file that FQ2VCF_RC point to goes into effect.
 
-config and input files
+config and input example files are on examples directory, which are examples/fq2vcf.cfg and examples/list.
 
-example files are on examples directory, paths are examples/FQ2VCF.cfg examples/list
-
-log file locate on work directory, they are .log0 and .log1.
+log files locate on work directory, they are .log0 and .log1.
 
 ## files needed before running scripts
 ### reference genome

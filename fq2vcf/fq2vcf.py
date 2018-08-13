@@ -27,7 +27,7 @@ def format_indel_std(ini_file, indel_realign='indel_realignment'):
 def format_bqsr(ini_file, bqsr='bqsr'):
     config = get_config(ini_file)
     bqsr_std = config[bqsr].values()
-    bqsr_std = ['-knownSites %s' % i for i in bqsr_std]
+    bqsr_std = ['-knownSites %s' % i for i in bqsr_std if i != '']
     bqsr_std = ' '.join(bqsr_std)
     return bqsr_std
 
