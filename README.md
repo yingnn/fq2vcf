@@ -61,7 +61,7 @@ pipenv install .
 
 activate environment variable FQ2VCF_RC, FQ2VCF_RC point to a file that contains some variables and functions that scripts used. the default file path is ~/.config/fq2vcfrc. FQ2VCF_RC can be set by yourself.
 
-. activate.sh
+. activate.sh path/to/fq2vcf
 
 fq2vcf --help
 
