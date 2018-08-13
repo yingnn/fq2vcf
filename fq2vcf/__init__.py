@@ -1,3 +1,3 @@
-__version__ = '0.0.0'
+# __version__ = '0.0.0'
 from .utils import proc
-from .yful import cat_rc_utils
+from .fq2vcf import cat_rc_utils

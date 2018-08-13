@@ -1,4 +1,4 @@
 """
-yful constants
+fq2vcf constants
 
 """

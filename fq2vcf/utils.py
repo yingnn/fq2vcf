@@ -1,5 +1,5 @@
 """
-yful utils
+fq2vcf utils
 
 """
 # coding: utf-8
