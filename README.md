@@ -10,7 +10,7 @@
 - bqsr -- base quality score recalibration
 - haplotype calling and genotype calling
 
-## install
+## installation
 
 ### tools involved
 
@@ -47,17 +47,21 @@ On Linux and macOS you can find the user base binary directory by running python
 - picard
 - gatk, version 3 and >=3.7 support currently.
 
-### install steps
-
-cd ~
+### installing fq2vcf
 
 pipenv install git+https://github.com/yingnn/fq2vcf.git#egg=fq-to-vcf
 
 ## usage
 
-activate virtual environment, environment variable FQ2VCF_RC, FQ2VCF_RC point to a file that contains some variables and functions that scripts used. the default file path is ~/.config/fq2vcfrc. FQ2VCF_RC can be set by yourself.
+activate virtual environment
 
-. activate.sh ~
+cd path/on/which/installing/fq2vcf
+
+pipenv shell
+
+activate environment variable FQ2VCF_RC, FQ2VCF_RC point to a file that contains some variables and functions that scripts used. the default file path is ~/.config/fq2vcfrc. FQ2VCF_RC can be set by yourself.
+
+. activate.sh
 
 fq2vcf --help
 
