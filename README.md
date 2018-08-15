@@ -49,17 +49,15 @@ On Linux and macOS you can find the user base binary directory by running python
 
 ### install steps
 
-git clone https://github.com/yingnn/fq2vcf.git
+cd ~
 
-cd fq2vcf
-
-pipenv install .
+pipenv install git+https://github.com/yingnn/fq2vcf.git#egg=fq-to-vcf
 
 ## usage
 
 activate virtual environment, environment variable FQ2VCF_RC, FQ2VCF_RC point to a file that contains some variables and functions that scripts used. the default file path is ~/.config/fq2vcfrc. FQ2VCF_RC can be set by yourself.
 
-. activate.sh path/to/fq2vcf
+. activate.sh ~
 
 fq2vcf --help
 
